@@ -6,13 +6,142 @@
         <title>css forms</title>
         <style>
             body{
-
+                background-color: #A32755;
+                margin: 0px;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            form{
+                width: 55%;
+                min-height: 500px;
+                background-color: #751A3C;
+                margin: 100px auto;
+            }
+            form table{
+                margin:100px auto;
+                padding:40px 50px;
+            }
+            td{
+                padding: 5px 0px;
+            }
+            td label{
+                color: #fff;
+                height: 20px;
+                /* font-weight: bold; */
+            }
+            .gender{
+                position: relative;
+                top: -19px;
+            }
+            .mylabel{
+                display: inline-block;
+            }
+            .mylabel input{
+                position: relative;
+                top: -21px;
+                right: -19px; 
+                cursor: pointer;
+            }
+            td input{
+                width: 100%;
+                height: 25px;
+            }
+            .submit{
+                border-radius: 20px;
+                font-size: 1.2em;
+                font-weight: bold;
+                cursor: pointer;
             }
         </style>
     </head>
     <body>
         <form>
-            
+            <thead></thead>
+            <tbody>
+                <table>
+                    <tr>
+                        <td style="width:40%;">
+                            <label for="fname">Name:</label>
+                        </td>
+                        <td style="width: 60%;">
+                            <input id="name" name="fname" placeholder="your name">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width:40%;">
+                            <label for="Email">Email:</label>
+                        </td>
+                        <td style="width: 60%;">
+                            <input id="Email" name="Email" placeholder="your Email">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width:40%;">
+                            <label for="password">password:</label>
+                        </td>
+                        <td style="width: 60%;">
+                            <input id="password" name="" placeholder="">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width:40%">
+                            <label for="phone number">Phone Number:</label>
+                        </td>
+                        <td style="width: 60%;">
+                            <input id="phone number" name="" placeholder="">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width:40%">
+                            <label for="gender" class="gender">Gender:</label>
+                        </td>
+                        <td style="width: 60%;">
+                            <label class="mylabel">
+                                male:
+                                <input type="radio" name="gender" value="male">
+                            </label>
+                            <label class="mylabel">
+                                female:
+                                <input type="radio" name="gender" value="female">
+                            </label>
+                            <label class="mylabel">
+                                other:
+                                <input type="radio" name="gender" value="other">
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width:40%">
+                            <label for="lang">Language:</label>
+                        </td>
+                        <td style="width: 60%;">
+                            <select name="lang" id="lang">
+                                <option value="">Language</option>
+                                <option value="english">English</option>
+                                <option value="hindi">Hindi</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width:40%">
+                            <label for="zip code">Zip code:</label>
+                        </td>
+                        <td style="width: 60%;">
+                            <input id="zip code" name="zip code" placeholder="">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width:40%">
+                            <label for="about">About:</label>
+                        </td>
+                        <td style="width: 60%;">
+                            <textarea name="about" id="about" cols="45" rows="5" placeholder="write about yourself....."></textarea>
+                        </td>
+                    </tr>
+                        <td colspan="2">
+                            <input class="submit" type="submit" name="submit" value="Register">
+                        </td>
+                    </table>
+            </tbody>
         </form>
     </body>
 </html>
